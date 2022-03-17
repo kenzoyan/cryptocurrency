@@ -11,6 +11,6 @@ The app is based on **React** and some APIs.
 
 Infos about Coins Supply
 
-Money exchanges: coins <-> USD
+~~Money exchanges: coins <-> USD~~
 
 ### Link - [Crypto Currency](https://cryptosinfohub.netlify.app/)
