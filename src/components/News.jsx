@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Select, Typography, Row, Col, Avatar, Card} from 'antd';
+import { Select, Typography, Row, Col, Avatar, Card, } from 'antd';
 import moment from 'moment';
 
 import { useGetCryptosQuery } from '../services/CryptoApi';
@@ -22,7 +22,8 @@ const News = ({simplified}) => {
   
   return (
     <> 
-      <Typography.Title level={2} className='search-crypto'>Crypto News</Typography.Title>
+      {!simplified && (<Typography.Title level={2} className='search-crypto head-title'>Crypto News</Typography.Title>)}
+      
       <Row gutter={[32,32]} className="crypto-card-container">
       {!simplified && (
         <Col span={24} className='search-crypto'>

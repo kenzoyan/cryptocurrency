@@ -27,7 +27,7 @@ const Cryptocurrencies = ({simplified}) => {
   
   return (
     <> 
-    <Typography.Title level={2} className='search-crypto'>Global Coins Info</Typography.Title>
+    {!simplified && (<Typography.Title level={2} className='search-crypto head-title'>Global Coins Info</Typography.Title>)}
     {!simplified && (
       <div className='search-crypto'>
       <Input.Search placeholder="Search Cryptocurrency" allowClear onChange={(e) => setSearchText(e.target.value.toLowerCase())} style={{ width: 200 }} />

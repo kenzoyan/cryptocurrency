@@ -353,7 +353,7 @@ width: 70%;
 }
 .search-crypto{
     margin: 20px auto 30px auto;
-    width: 250px;
+    width: 400px;
 }
 .crypto-card-container{
     min-height: 65vh !important;
@@ -375,4 +375,21 @@ width: 70%;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.head-title{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}
+
+.head-container{
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;;
+    align-items: center;
+    margin: 20px auto 30px auto;
 }

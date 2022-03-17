@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <div className='logo-container'>
             <Avatar src={logoPic} size="large" />
-            <Typography.Title level={1} className="logo" ><Link to="/">CryptoHub</Link></Typography.Title>
+            <Typography.Title level={1} className="logo head-title" ><Link to="/">CryptoHub</Link></Typography.Title>
             <Button type="primary" onClick={() => setCollapsed(!collapsed)} className='menu-control-container'>
             {collapsed? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>} 
             </Button>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<FundOutlined />}>
-            <Link to="/supply">Coins Supply</Link>
+            <Link to="/converter">Money Converter</Link>
           </Menu.Item>
           <Menu.Item key="3" icon={<FundOutlined />}>
             <Link to="/cryptocurrencies">Coins info</Link>
@@ -60,7 +60,8 @@ const Navbar = () => {
             <Link to="/news">News</Link>
           </Menu.Item>
           <Menu.Item key="5" icon={<MoneyCollectOutlined />}>
-            <Link to="/exchanges">Money Exchange</Link>
+            <Link to="/">More to come...</Link>
+            
           </Menu.Item>
         </Menu>
       )}

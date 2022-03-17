@@ -17,7 +17,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Typography.Title level={2}>Global Crypto Statistic</Typography.Title>
+      <Typography.Title level={1} className='head-title'>Global Crypto Statistic</Typography.Title>
       <Row gutter={[32,32]}>
         <Col span={12}><Statistic title="Global Total" value={globalStats.total} /></Col>
         <Col span={12}><Statistic title="Global TotalCoins" value={globalStats.totalCoins} /></Col>
@@ -27,13 +27,13 @@ const Homepage = () => {
         <Col span={12}><Statistic title="Global Total24hVolume" value={millify(globalStats.total24hVolume)} /></Col>
       </Row>
       <div className="home-heading-container">
-        <Typography.Title level={2} className="home-title">Top 10 Cryptos In The World</Typography.Title>
-        <Typography.Title level={3} className="show-more"><Link to="/cryptocurrencies">Show more</Link></Typography.Title>
+        <Typography.Title level={1} className="home-title head-title">Top Cryptos In The World</Typography.Title>
+        <Typography.Title level={3} className="show-more"><Link to="/cryptocurrencies">More...</Link></Typography.Title>
       </div>
       <Cryptocurrencies simplified />
       <div className="home-heading-container">
-        <Typography.Title level={2} className="home-title">Latest Crypto News</Typography.Title>
-        <Typography.Title level={3}><Link to="/news">Show more</Link></Typography.Title>
+        <Typography.Title level={1} className="home-title head-title">Latest Crypto News</Typography.Title>
+        <Typography.Title level={3}><Link to="/news">More...</Link></Typography.Title>
       </div>
       <News simplified />
     </>
